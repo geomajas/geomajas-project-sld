@@ -25,7 +25,7 @@
 		Geomajas is a component framework for building rich Internet applications (RIA) with sophisticated capabilities
 		for the display, analysis and management of geographic information. It is a building block that allows
 		developers to add maps and other geographic data capabilities to their web applications.
-		
+
 		The SLD project is a standalone project that implements a communication, editing and persistence library for SLD (Styled Layer Descriptor) styles.
 	</description>
 
@@ -38,6 +38,8 @@
 	<modules>
 		<module>api</module>
 		<module>impl</module>
+		<module>documentation</module>
+		<module>javadoc</module>
 	</modules>
 
 	<build>
@@ -61,7 +63,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.geomajas.project</groupId>
 				<artifactId>geomajas-project-sld-api</artifactId>
@@ -127,23 +129,6 @@
 	</dependencyManagement>
 
 	<profiles>
-		<profile>
-			<id>documentation</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<modules>
-				<module>documentation</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>skipDocs</id>
-			<activation>
-				<property>
-					<name>skipDocs</name>
-				</property>
-			</activation>
-		</profile>
 		<profile>
 			<id>m2e</id>
 			<activation>
