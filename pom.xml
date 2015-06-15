@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.geomajas</groupId>
 		<artifactId>geomajas-al-parent</artifactId>
-		<version>2.4.0</version>
+		<version>2.5.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.geomajas.project</groupId>
@@ -48,7 +48,7 @@
 				<plugin>
 					<groupId>org.jibx</groupId>
 					<artifactId>maven-jibx-plugin</artifactId>
-					<version>1.2.5</version>
+					<version>${sld-jibx-version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -59,7 +59,7 @@
 			<dependency>
 				<groupId>org.geomajas.project</groupId>
 				<artifactId>geomajas-project-api-all</artifactId>
-				<version>1.0.0</version>
+				<version>${sld-version-geomajas-api}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -142,7 +142,8 @@
 	<properties>
 		<sld-spring-version>3.0.5.RELEASE</sld-spring-version>
 		<sld-jibx-version>1.2.5</sld-jibx-version>
-		<sld-gwt-version>2.5.0</sld-gwt-version>
-		<sld-geotools-version>9.2</sld-geotools-version>
+		<sld-gwt-version>2.7.0</sld-gwt-version>
+		<sld-geotools-version>13.0</sld-geotools-version>
+		<sld-version-geomajas-api>1.0.0</sld-version-geomajas-api>
 	</properties>
 </project>
